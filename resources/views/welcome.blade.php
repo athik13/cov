@@ -289,51 +289,53 @@
 
 
 <!-- Team Member Section Start here -->
-<div class="team-section bg-team padding-tb">
-    <div class="container">
-        <div class="section-header wow fadeInUp" data-wow-delay="0.3s">
-            <h2>ކްލިނިކްތައް</h2>
-            <p> ކޮވިޑް 19 ގެ އެއްވެސް އަލާމަތެއް ފެނިއްޖެނަމަ، އެއްވެސް ލަސްކުރުމެއްނެތި އެންމެ ކައިރީ ކްލިނިކަށް ދުރުވާށެވެ</p>
-        </div>
-        <div class="team-area">
-            <div class="row justify-content-center align-items-stretch">
-                <?php $i=1 ?>
+<section id="clinics">
+    <div class="team-section bg-team padding-tb">
+        <div class="container">
+            <div class="section-header wow fadeInUp" data-wow-delay="0.3s">
+                <h2>ކްލިނިކްތައް</h2>
+                <p> ކޮވިޑް 19 ގެ އެއްވެސް އަލާމަތެއް ފެނިއްޖެނަމަ، އެއްވެސް ލަސްކުރުމެއްނެތި އެންމެ ކައިރީ ކްލިނިކަށް ދުރުވާށެވެ</p>
+            </div>
+            <div class="team-area">
+                <div class="row justify-content-center align-items-stretch">
+                    <?php $i=1 ?>
 
-                @foreach ($hpa->local->clinics as $clinic)
-                <div class="col-xl-4 col-md-6 col-12 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="team-item">
-                        <div class="team-item-inner">
-                            <div class="team-thumb">
-                                <img src="/assets/images/team/0{{ $i }}.jpg" alt="team-membar">
-                            </div>
-                            <div class="team-content">
-                                <h5 class="member-name">{{ $clinic->dhivehi_name }}</h5>
-                                <p class="member-details">
-                                    {!! $clinic->dhivehi_description !!}
-                                </p>
-                                <ul class="icon-style-list lab-ul">
-                                    <li style="padding-top: 10px; padding-bottom: 10px;">
-                                        <span class="text-center">{!! $clinic->open_hours_dhivehi !!}</span>
-                                    </li>
-                                    <li class="text-center" style="padding-top: 10px; padding-bottom: 10px;">
-                                        <a href="{{ $clinic->location }}" class="btn btn-info" target="_blank">Google Maps</a>
-                                    </li>
-                                </ul>
+                    @foreach ($hpa->local->clinics as $clinic)
+                    <div class="col-xl-4 col-md-6 col-12 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="team-item">
+                            <div class="team-item-inner">
+                                <div class="team-thumb">
+                                    <img src="/assets/images/team/0{{ $i }}.jpg" alt="team-membar">
+                                </div>
+                                <div class="team-content">
+                                    <h5 class="member-name">{{ $clinic->dhivehi_name }}</h5>
+                                    <p class="member-details">
+                                        {!! $clinic->dhivehi_description !!}
+                                    </p>
+                                    <ul class="icon-style-list lab-ul">
+                                        <li style="padding-top: 10px; padding-bottom: 10px;">
+                                            <span class="text-center">{!! $clinic->open_hours_dhivehi !!}</span>
+                                        </li>
+                                        <li class="text-center" style="padding-top: 10px; padding-bottom: 10px;">
+                                            <a href="{{ $clinic->location }}" class="btn btn-info" target="_blank">Google Maps</a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <?php $i++ ?>
+                    @endforeach
                 </div>
-                <?php $i++ ?>
-                @endforeach
             </div>
         </div>
     </div>
-</div>
+</section>
 <!-- Team Member Section Ending here -->
 
 
 <!-- safe actions section start here -->
-<section class="safe-actions padding-tb bg-action">
+<section class="safe-actions padding-tb bg-action" id="safe-actions">
     <div class="action-shape">
         <img src="/assets/images/safe/shape/01.png" alt="action-shape">
     </div>
@@ -595,7 +597,7 @@
 <!-- faq section ending here -->
 
 <!-- Blog Section Start Here -->
-<section class="blog-section bg-blog padding-tb">
+<section class="blog-section bg-blog padding-tb" id="news-section">
     <div class="container">
         <div class="section-header wow fadeInUp" data-wow-delay="0.3s">
             <h2>ފަހުގެ ހަބަރުތައް</h2>
