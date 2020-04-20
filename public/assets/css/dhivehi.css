@@ -1,0 +1,32 @@
+@font-face {
+  font-family: 'Faruma';
+  src: url(/fonts/Faruma.otf?e42b53091d89c01c362623c612fc46f4) format("opentype");
+}
+
+@font-face {
+    font-family: "mvtyper";
+    src: url("/fonts/mvtyper.ttf");
+}
+
+@font-face {
+    font-family: "Mvaamu";
+    src: url("/fonts/mv-aammu-fk.ttf");
+}
+
+@font-face {
+    font-family: "Mvtyperbold";
+    src: url("/fonts/mvtypebold.ttf");
+}
+
+.dhivehi-font {
+  font-family: 'Faruma' !important;
+}
+
+.dhivehi-font-headings {
+    font-family: 'Mvaamu' !important;
+}
+
+.dhivehi-rtl {
+  direction: rtl !important;
+}
+
