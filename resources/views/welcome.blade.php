@@ -297,12 +297,14 @@
         </div>
         <div class="team-area">
             <div class="row justify-content-center align-items-stretch">
+                <?php $i=1 ?>
+
                 @foreach ($hpa->local->clinics as $clinic)
                 <div class="col-xl-4 col-md-6 col-12 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="team-item">
                         <div class="team-item-inner">
                             <div class="team-thumb">
-                                <img src="/assets/images/team/03.jpg" alt="team-membar">
+                                <img src="/assets/images/team/0{{ $i }}.jpg" alt="team-membar">
                             </div>
                             <div class="team-content">
                                 <h5 class="member-name">{{ $clinic->dhivehi_name }}</h5>
@@ -310,15 +312,18 @@
                                     {!! $clinic->dhivehi_description !!}
                                 </p>
                                 <ul class="icon-style-list lab-ul">
-                                    <li>
-                                        <i class="icofont-phone"></i>
+                                    <li style="padding-top: 10px; padding-bottom: 10px;">
                                         <span class="text-center">{!! $clinic->open_hours_dhivehi !!}</span>
+                                    </li>
+                                    <li class="text-center" style="padding-top: 10px; padding-bottom: 10px;">
+                                        <a href="{{ $clinic->location }}" class="btn btn-info" target="_blank">Google Maps</a>
                                     </li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </div>
+                <?php $i++ ?>
                 @endforeach
             </div>
         </div>
