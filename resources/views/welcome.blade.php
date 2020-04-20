@@ -405,34 +405,24 @@
             </div>
             <div class="col-lg-6 col-12 wow fadeInUp" data-wow-delay="0.4s">
                 <div class="sa-content-part">
-                    <h2>How to stay Safe Important Percautions</h2>
-                    <p>Continuay seize magnetic oportunities via value added imperatives ompetenty plagiarize customized meta-services after interopera supply chains nthuastica embrace portals through high-payoff internal or "organic" sources rogressively engineer cross functional synergy with client-centric </p>
+                    <h2>ރައްކާތެރިވުމަށް އެޅޭނެ ފިޔަވަޅު</h2>
+                    
                     <div class="row">
                         <div class="col-lg-6 col-12">
                             <div class="sa-title">
-                                <h6><i class="icofont-checked"></i>Things You Should Do</h6>
+                                <h6><i class="icofont-checked"></i>ކުރަން ޖެހޭނެ ކަންތައް</h6>
                             </div>
                             <ul class="lab-ul">
-                                <li><i class="icofont-check-circled"></i>Stay at Home</li>
-                                <li><i class="icofont-check-circled"></i>Wear Mask</li>
-                                <li><i class="icofont-check-circled"></i>Wash Your Hands</li>
-                                <li><i class="icofont-check-circled"></i>Well Done Cooking</li>
-                                <li><i class="icofont-check-circled"></i>Seek for a Doctor</li>
-                                <li><i class="icofont-check-circled"></i>Avoid Crowed Places</li>
+                                <li><i class="icofont-check-circled"></i>ގޭ ތެރޭ ތިބުން</li>
+                                <li><i class="icofont-check-circled"></i>މާސްކް އެޅުން</li>
+                                <li><i class="icofont-check-circled"></i>ގިނައިން އަތް ދޮވުން</li>
+                                <li><i class="icofont-check-circled"></i>އަމިއްލައަށް ކެއްކުން</li>
+                                <li><i class="icofont-check-circled"></i>ބަލިވާހެން ހީވާނަމަ އަވަހަށް ޑރ އަކަށް ދެކުން</li>
+                                <li><i class="icofont-check-circled"></i>މީހުން އެއްވާ ތަންތަނަށް ދިޔުން</li>
                             </ul>
                         </div>
                         <div class="col-lg-6 col-12">
-                            <div class="sa-title">
-                                <h6><i class="icofont-not-allowed"></i>Things You Should Avoid</h6>
-                            </div>
-                            <ul class="lab-ul">
-                                <li><i class="icofont-close-circled"></i>Stay at Home</li>
-                                <li><i class="icofont-close-circled"></i>Wear Mask</li>
-                                <li><i class="icofont-close-circled"></i>Wash Your Hands</li>
-                                <li><i class="icofont-close-circled"></i>Well Done Cooking</li>
-                                <li><i class="icofont-close-circled"></i>Seek for a Doctor</li>
-                                <li><i class="icofont-close-circled"></i>Avoid Crowed Places</li>
-                            </ul>
+                            
                         </div>
                     </div>
                 </div>
@@ -603,7 +593,7 @@
 <section class="blog-section bg-blog padding-tb">
     <div class="container">
         <div class="section-header wow fadeInUp" data-wow-delay="0.3s">
-            <h2>Our Most Popular Blog</h2>
+            <h2>ފަހުގެ ހަބަރުތައް</h2>
             <p> Dynamically formulate fully tested catalysts for change via focused methods of empowerment Assertively extend alternative synergy and extensive web services.</p>
         </div>
         <div class="section-wrapper">
