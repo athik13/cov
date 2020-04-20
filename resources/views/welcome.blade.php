@@ -10,7 +10,7 @@
                 <div class="col-12">
                     <div class="content-part text-center">
                         <div class="section-header">
-                            <h2>COVID-19 Tracker</h2>
+                            <h2>ކޮވިޑް 19 ގެ އެންމެ ފަހުގެ މަޢުލޫމާތު</h2>
                             <h3>{{ $hpa->local->surveillance[0]->dhivehi_label }}</h3>
                             <h2 class="count-people">{{ $hpa->local->surveillance[0]->statistic }}</h2>
                         </div>
@@ -178,15 +178,12 @@
                     </div>
                     <div class="col-lg-6 col-12 wow fadeInLeft" data-wow-delay="0.5s">
                         <div class="ccb-content">
-                            <h2>What Is Coronavirus?</h2>
-                            <h6>Coronavirus COVID-19 Global Cases map developed by the Johns Hopkins Center for Systems Science and Engineering.</h6>
-                            <p>Coronaviruses are type of virus. There are many different kinds, & some cause disease newly identified type has caused recent outbreak of respiratory ilnessnow called COVID-19 that started in China.</p>
-                            <ul class="lab-ul">
-                                <li><i class="icofont-tick-mark"></i>COVID-19 is the disease caused by the new coronavirus that emerged in China in December 2020.</li>
-                                <li><i class="icofont-tick-mark"></i>COVID-19 symptoms include cough, fever and shortness of breath. COVID-19 can be severe, and some cases have caused death.</li>
-                                <li><i class="icofont-tick-mark"></i>The new coronavirus can be spread from person to person. It is diagnosed with a laboratory test.</li>
-                            </ul>
-                            <a href="#" class="lab-btn style-2"><span>get started Now</span></a>
+                            <h2>ކޮވިޑް 19 އަކީ ކޮބާ ؟</h2>
+                            
+                            <p>ކޮވިޑް-19 ނުވަތަ އާންމު ނަމުންނަމަ ކޮރޯނާ ވައިރަސްއަކީ މުޅިން އަލަށް 2019 ވަނަ އަހަރު ފެނިފައިވާ ވައިރަސްއެކެވެ. ކޮރޯނާ ވައިރަސްގެ އާއިލާއަށް ނިސްބަތްވާ މިވައިރަސް އަކީ އެވައިރަސް އަކަށް ވެކްސިން އެއް ނުވަތަ ސީދާ މިބައްޔަށް ފަރުވާއެއް އަދި ނުލިބޭ ބައްޔެކެވެ.
+
+ޗައިނާގެ ސިޓީއެއް ކަމަށްވާ ވޫހާންގެ މާރުކޭޓް ސަރަހައްދުން ފެތުރެން ފެށި ކަމަށް ބެލެވޭ މި ވައިރަސް އަކީ ކޮރޯނާ އާއިލާގެ އެހެން ވައިރަސްތައް ފަދައިން ކޮންމެވެސް ކަހަލަ ޖަނަވާރެއްގެ ފަރާތުން އުފެދިފައިވާ ވައިރަސްއެއް ކަމަށްވެއެވެ.</p>
+                           
                         </div>
                     </div>
                 </div>
@@ -208,8 +205,7 @@
     </div>
     <div class="container">
         <div class="section-header wow fadeInUp" data-wow-delay="0.3s">
-            <h2>Corona Virus Symptoms</h2>
-            <p> Dynamically formulate fully tested catalysts for change via focused methods of empowerment Assertively extend alternative synergy and extensive web services.</p>
+            <h2>ކޮވިޑް 19 ގެ އަލާމާތައް</h2>
         </div>
         <div class="section-wrapper">
             <div class="row justify-content-center">
@@ -220,8 +216,7 @@
                                 <img src="/assets/images/service/01.jpg" alt="service">
                             </div>
                             <div class="service-content">
-                                <h4>Coughing And Sneezing</h4>
-                                <p>Our comprehensive Online Marketing strategy will boost your website trafic hence monthly sales.</p>
+                                <h4>ކެެއްސާ ކިބިހި އެޅުން</h4>
                             </div>
                         </div>
                     </div>
@@ -233,8 +228,7 @@
                                 <img src="/assets/images/service/02.jpg" alt="service">
                             </div>
                             <div class="service-content">
-                                <h4>Hot Fever</h4>
-                                <p>Our comprehensive Online Marketing strategy will boost your website trafic hence monthly sales.</p>
+                                <h4>ގަދަޔަށް ހުންއައުން</h4>
                             </div>
                         </div>
                     </div>
@@ -246,8 +240,7 @@
                                 <img src="/assets/images/service/03.jpg" alt="service">
                             </div>
                             <div class="service-content">
-                                <h4>Strong Headacke</h4>
-                                <p>Our comprehensive Online Marketing strategy will boost your website trafic hence monthly sales.</p>
+                                <h4>ބޮލުގައި ރިއްސުން</h4>
                             </div>
                         </div>
                     </div>
@@ -259,8 +252,7 @@
                                 <img src="/assets/images/service/04.jpg" alt="service">
                             </div>
                             <div class="service-content">
-                                <h4>Shortness Of Breath</h4>
-                                <p>Our comprehensive Online Marketing strategy will boost your website trafic hence monthly sales.</p>
+                                <h4>ނޭވާ ކުރުވުން</h4>
                             </div>
                         </div>
                     </div>
@@ -272,8 +264,7 @@
                                 <img src="/assets/images/service/05.jpg" alt="service">
                             </div>
                             <div class="service-content">
-                                <h4>Confusion</h4>
-                                <p>Our comprehensive Online Marketing strategy will boost your website trafic hence monthly sales.</p>
+                                <h4>ވަރުބަލިވުން</h4>
                             </div>
                         </div>
                     </div>
@@ -285,8 +276,7 @@
                                 <img src="/assets/images/service/06.jpg" alt="service">
                             </div>
                             <div class="service-content">
-                                <h4>Sore Throat</h4>
-                                <p>Our comprehensive Online Marketing strategy will boost your website trafic hence monthly sales.</p>
+                                <h4>ކަރުގައި ރިއްސުން</h4>
                             </div>
                         </div>
                     </div>
@@ -302,8 +292,8 @@
 <div class="team-section bg-team padding-tb">
     <div class="container">
         <div class="section-header wow fadeInUp" data-wow-delay="0.3s">
-            <h2>Meet Our Best Doctors</h2>
-            <p> Dynamically formulate fully tested catalysts for change via focused methods of empowerment Assertively extend alternative synergy and extensive web services.</p>
+            <h2>ކްލިނިކްތައް</h2>
+            <p> ކޮވިޑް 19 ގެ އެއްވެސް އަލާމަތެއް ފެނިއްޖެނަމަ، އެއްވެސް ލަސްކުރުމެއްނެތި އެންމެ ކައިރީ ކްލިނިކަށް ދުރުވާށެވެ</p>
         </div>
         <div class="team-area">
             <div class="row justify-content-center align-items-stretch">
