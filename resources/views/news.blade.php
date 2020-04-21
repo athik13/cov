@@ -25,7 +25,7 @@
                     <ul class="widget-wrapper lab-ul">
                         @foreach ($newsAll as $news)
                         <li class="d-flex flex-wrap justify-content-between" style="font-size: 20px">
-                            <div class="post-thumb">
+                            <div class="post-thumb" style="width: 100px; height: 100px;">
                                 <a href="{{ $news->url }}"><img src="{{ $news->image_url }}" alt="product"></a>
                             </div>
                             <div class="post-content">
@@ -35,6 +35,8 @@
                         </li>
                         @endforeach
                     </ul>
+
+                    {{ $newsAll->links() }}
                 </div>
             </div>
         </div>

@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Http;
 use App\News;
-
+use App\Resource;
 
 /*
 |--------------------------------------------------------------------------
@@ -41,7 +41,13 @@ Route::get('/dashboard', function() {
 });
 
 Route::get('/news', function() {
-    $newsAll = News::latest()->take(10)->get();
+    $newsAll = News::latest()->paginate(15);
 
     return view('news', compact('newsAll'));
+});
+
+Route::get('/resources', function() {
+    $resources = Resource::latest()->paginate(15);
+
+    return view('resources', compact('resources'));
 });
