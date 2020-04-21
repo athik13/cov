@@ -36,3 +36,6 @@ Route::get('/api/coronamv', function () {
     return $hpa;
 });
 
+Route::get('/dashboard', function() {
+    return view('dashboard');
+});
