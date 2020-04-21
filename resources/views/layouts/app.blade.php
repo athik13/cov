@@ -140,6 +140,7 @@
 		<script src="/assets/js/jquery.countdown.min.js"></script>
 		<script src="/assets/js/wow.min.js"></script>
         <script src="/assets/js/functions.js"></script>
+        @yield('script')
 
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-92445511-6"></script>

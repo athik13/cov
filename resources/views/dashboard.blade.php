@@ -23,10 +23,22 @@
 <section class="corona-count-section pt-0 padding-tb">
     <div class="container">
         <div class="corona-wrap">
-            <iframe src="https://dashboard.covidmv.live" width="100%"></iframe>
+            <iframe src="https://dashboard.covidmv.live" id="dashboard-iframe" ></iframe>
         </div>
     </div>
 </section>
 <!-- corona count section ending here -->
+
+@endsection
+
+@section('script')
+
+<script src="/assets/js/seamless.parent.min.js"></script>
+<script type="text/javascript">
+    window.onload = function() {
+      // Turns the iframe into a seamless iframe.
+      window.seamless(document.getElementById('dashboard-iframe'));
+    };
+</script>
 
 @endsection
