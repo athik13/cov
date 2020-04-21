@@ -17,7 +17,7 @@
 		<link rel="stylesheet" href="/assets/css/swiper.min.css">
 		<link rel="stylesheet" href="/assets/css/style.css">
 
-		<title>Covid-19</title>
+		<title>Covid - 19</title>
 	</head>
 
 	<body class="dhivehi-font rtl" dir="rtl">
