@@ -138,7 +138,7 @@
                                 </div>
                                 <div class="corona-content">
                                     <h3 class="count-number">{{ $hpa->local->surveillance[7]->statistic }}</h3>
-                                    <p>{{ $hpa->local->surveillance[7]->dhivehi_label }}</p>
+                                    <p>އައިސޮލޭޝަން ގައި</p>
                                 </div>
                             </div>
                         </div>
