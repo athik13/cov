@@ -13,6 +13,9 @@
                             <h2>ކޮވިޑް 19 ގެ އެންމެ ފަހުގެ މަޢުލޫމާތު</h2>
                             <h3>{{ $hpa->local->surveillance[0]->dhivehi_label }}</h3>
                             <h2 class="count-people">{{ $hpa->local->surveillance[0]->statistic }}</h2>
+                            <div class="header-btn" style="">
+                                <a href="https://dashboard.covidmv.live" class="lab-btn"><i class="icofont-chart"></i> <span style="font-size: 20px">dashboard.covidmv</span></a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -294,7 +297,7 @@
         <div class="container">
             <div class="section-header wow fadeInUp" data-wow-delay="0.3s">
                 <h2>ކްލިނިކްތައް</h2>
-                <p> ކޮވިޑް 19 ގެ އެއްވެސް އަލާމަތެއް ފެނިއްޖެނަމަ، އެއްވެސް ލަސްކުރުމެއްނެތި އެންމެ ކައިރީ ކްލިނިކަށް ދުރުވާށެވެ</p>
+                <p style="font-size: 20px;"> ކޮވިޑް 19 ގެ އެއްވެސް އަލާމަތެއް ފެނިއްޖެނަމަ، އެއްވެސް ލަސްކުރުމެއްނެތި އެންމެ ކައިރީ ކްލިނިކަށް ދުރުވާށެވެ</p>
             </div>
             <div class="team-area">
                 <div class="row justify-content-center align-items-stretch">
@@ -425,7 +428,7 @@
                                 <li><i class="icofont-check-circled"></i>ގިނައިން އަތް ދޮވުން</li>
                                 <li><i class="icofont-check-circled"></i>އަމިއްލައަށް ކެއްކުން</li>
                                 <li><i class="icofont-check-circled"></i>ބަލިވާހެން ހީވާނަމަ އަވަހަށް ޑރ އަކަށް ދެކުން</li>
-                                <li><i class="icofont-check-circled"></i>މީހުން އެއްވާ ތަންތަނަށް ދިޔުން</li>
+                                <li><i class="icofont-check-circled"></i>މީހުން އެއްވާ ތަންތަނަށް ނުދިޔުން</li>
                             </ul>
                         </div>
                         <div class="col-lg-6 col-12">
@@ -447,149 +450,33 @@
     </div>
     <div class="container">
         <div class="section-header wow fadeInUp" data-wow-delay="0.3s">
-            <h2>Friquently Ask Questions</h2>
-            <p> Dynamically formulate fully tested catalysts for change via focused methods of empowerment Assertively extend alternative synergy and extensive web services.</p>
+            <h2>ރާއްޖެއަށް ދަތުރުފަތުރު ކުރުމުގައި އަޅާފައިވާ ފިޔަވަޅުތައް</h2>
+            <p style="font-size: 20px;"> އެއްވެސް ފަސިންޖަރަކު މިއިންތަނަކުން ފުރައިގެން ނުވަތަ އެތަނުގައި/އެޤައުމުގައި ޓްރާންސްޒިޓްވެފައިވާ ކަމަށް އެ ފަސިންޖަރެއް އެންމެފަހުން ދަތުރުކުރި ތަންތަނުގެ ލިސްޓުގައި ހިމެނޭނަމަ އެ ފަސިންޖަރަކު ރާއްޖެ އެތެރެވުމުގެ ހުއްދައެއް ނުދެވޭނެއެވެ.
+                ކަންމިހެން އޮތްނަމަވެސް، ދިވެހިންނާއި ދިވެއްސެއްގެ އަނބިންނާއި ފިރިން ރާއްޖެ އެތެރެވުމަށް ހުއްދަކުރެވޭނެއެވެ. ނަމަވެސް މިގޮތަށް ހުއްދަކުރާއިރު އެފަރާތްތައް ކަރަންޓީނުކުރުންފަދަ އަޅަނަޖެހޭ ފިޔަވަޅުތައް އެޅޭނެއެވެ.</p>
         </div>
         <div class="section-wrapper wow fadeInUp" data-wow-delay="0.4s">
             <div class="row justify-content-center">
-                <div class="col-lg-6 col-sm-8 col-12">
-                    <ul class="accordion lab-ul">
+                <ul class="accordion lab-ul" style="width: 50%; font-size: 20px !important;">
+                <div class="row">
+                    @foreach ($hpa->local->travel_bans as $ban)
+                    <div class="col-lg-6 col-sm-8 col-12">
                         <li class="accordion-item">
                             <div class="accordion-list">
                                 <div class="left">
                                     <div class="icon"><i class="icofont-info"></i></div>
                                 </div>
                                 <div class="right">
-                                    <h6>What are the objectives of this Website?</h6>
+                                    <h4>{{ $ban->dhivehi_country }}</h4>
                                 </div>
                             </div>
                             <div class="accordion-answer">
-                                <p>Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore vertatis et quasi archtecto beatae vitae dicta sunt explicab Nemo enim ipsam voluptatem quia voluptas.</p>
+                                <p>{!! $ban->dhivehi_details !!}</p>
                             </div>
                         </li>
-                        <li class="accordion-item">
-                            <div class="accordion-list">
-                                <div class="left">
-                                    <div class="icon"><i class="icofont-info"></i></div>
-                                </div>
-                                <div class="right">
-                                    <h6>What is the best features and services we deiver?</h6>
-                                </div>
-                            </div>
-                            <div class="accordion-answer">
-                                <p>Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore vertatis et quasi archtecto beatae vitae dicta sunt explicab Nemo enim ipsam voluptatem quia voluptas.</p>
-                            </div>
-                        </li>
-                        <li class="accordion-item">
-                            <div class="accordion-list">
-                                <div class="left">
-                                    <div class="icon"><i class="icofont-info"></i></div>
-                                </div>
-                                <div class="right">
-                                    <h6>Why this Prevention important to me?</h6>
-                                </div>
-                            </div>
-                            <div class="accordion-answer">
-                                <p>Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore vertatis et quasi archtecto beatae vitae dicta sunt explicab Nemo enim ipsam voluptatem quia voluptas.</p>
-                            </div>
-                        </li>
-                        <li class="accordion-item">
-                            <div class="accordion-list">
-                                <div class="left">
-                                    <div class="icon"><i class="icofont-info"></i></div>
-                                </div>
-                                <div class="right">
-                                    <h6>how may I take part in and purchase this?</h6>
-                                </div>
-                            </div>
-                            <div class="accordion-answer">
-                                <p>Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore vertatis et quasi archtecto beatae vitae dicta sunt explicab Nemo enim ipsam voluptatem quia voluptas.</p>
-                            </div>
-                        </li>
-                        <li class="accordion-item">
-                            <div class="accordion-list">
-                                <div class="left">
-                                    <div class="icon"><i class="icofont-info"></i></div>
-                                </div>
-                                <div class="right">
-                                    <h6>What kinds of security policy do you maintain?</h6>
-                                </div>
-                            </div>
-                            <div class="accordion-answer">
-                                <p>Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore vertatis et quasi archtecto beatae vitae dicta sunt explicab Nemo enim ipsam voluptatem quia voluptas.</p>
-                            </div>
-                        </li>
-                    </ul>
+                    </div>
+                    @endforeach
                 </div>
-                <div class="col-lg-6 col-sm-8 col-12">
-                    <ul class="accordion lab-ul">
-                        <li class="accordion-item">
-                            <div class="accordion-list">
-                                <div class="left">
-                                    <div class="icon"><i class="icofont-info"></i></div>
-                                </div>
-                                <div class="right">
-                                    <h6>Get things done with this beautiful app?</h6>
-                                </div>
-                            </div>
-                            <div class="accordion-answer">
-                                <p>Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore vertatis et quasi archtecto beatae vitae dicta sunt explicab Nemo enim ipsam voluptatem quia voluptas.</p>
-                            </div>
-                        </li>
-                        <li class="accordion-item">
-                            <div class="accordion-list">
-                                <div class="left">
-                                    <div class="icon"><i class="icofont-info"></i></div>
-                                </div>
-                                <div class="right">
-                                    <h6>Starting with Aviki is easier than anything?</h6>
-                                </div>
-                            </div>
-                            <div class="accordion-answer">
-                                <p>Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore vertatis et quasi archtecto beatae vitae dicta sunt explicab Nemo enim ipsam voluptatem quia voluptas.</p>
-                            </div>
-                        </li>
-                        <li class="accordion-item">
-                            <div class="accordion-list">
-                                <div class="left">
-                                    <div class="icon"><i class="icofont-info"></i></div>
-                                </div>
-                                <div class="right">
-                                    <h6>20k+ Customers Love Aviki App?</h6>
-                                </div>
-                            </div>
-                            <div class="accordion-answer">
-                                <p>Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore vertatis et quasi archtecto beatae vitae dicta sunt explicab Nemo enim ipsam voluptatem quia voluptas.</p>
-                            </div>
-                        </li>
-                        <li class="accordion-item">
-                            <div class="accordion-list">
-                                <div class="left">
-                                    <div class="icon"><i class="icofont-info"></i></div>
-                                </div>
-                                <div class="right">
-                                    <h6>Whatever Work You Do You Can Do It In Aviki?</h6>
-                                </div>
-                            </div>
-                            <div class="accordion-answer">
-                                <p>Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore vertatis et quasi archtecto beatae vitae dicta sunt explicab Nemo enim ipsam voluptatem quia voluptas.</p>
-                            </div>
-                        </li>
-                        <li class="accordion-item">
-                            <div class="accordion-list">
-                                <div class="left">
-                                    <div class="icon"><i class="icofont-info"></i></div>
-                                </div>
-                                <div class="right">
-                                    <h6>Download our guide manage your daily works?</h6>
-                                </div>
-                            </div>
-                            <div class="accordion-answer">
-                                <p>Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore vertatis et quasi archtecto beatae vitae dicta sunt explicab Nemo enim ipsam voluptatem quia voluptas.</p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
+                </ul>
             </div>
         </div>
     </div>
@@ -597,6 +484,7 @@
 <!-- faq section ending here -->
 
 <!-- Blog Section Start Here -->
+@if (!$news3->isEmpty())
 <section class="blog-section bg-blog padding-tb" id="news-section">
     <div class="container">
         <div class="section-header wow fadeInUp" data-wow-delay="0.3s">
@@ -605,78 +493,37 @@
         </div>
         <div class="section-wrapper">
             <div class="row justify-content-center">
+                @foreach ($news3 as $news)
                 <div class="col-lg-4 col-sm-6 col-12 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="post-item">
+                    <div class="post-item" style="box-shadow: 5px 5px 10px;">
                         <div class="post-item-inner">
-                            <div class="post-thumb">
-                                <a href="#"><img src="/assets/images/blog/01.jpg" alt="lab-blog"></a>
+                            <div class="post-thumb" style="">
+                                <a href="{{ $news->url }}"><img src="{{ $news->image_url }}" alt="lab-blog"></a>
                             </div>
-                            <div class="post-content">
-                                <h5><a href="#">Conulting Reporting Qouncil Arei
-                                    Not Could More...</a></h5>
+                            <div class="post-content" style="background: #d2f0d2 !important; box-shadow: inset 0 0 3px;">
+                                <h5><a href="{{ $news->url }}">{{ $news->title }}</a></h5>
                                 <div class="author-date">
-                                    <a href="#" class="date"><i class="icofont-calendar"></i>July 12, 2020</a>
-                                    <a href="#" class="admin"><i class="icofont-ui-user"></i>Somrat Islam</a>
+                                    <a href="{{ $news->url }}" class="date"><i class="icofont-calendar" style="color: #008d01;"></i> {{ $news->date }} </a>
+                                    <br>
+                                    <a href="{{ $news->url }}" class="admin"><i class="icofont-ui-user" style="color: #008d01;"></i> {{ $news->auth }} </a>
                                 </div>
-                                <p>Pluoresntly customize pranci an plcentered  customer service anding strategic amerials Interacvely cordinate performe</p>
                                 <div class="post-footer">
-                                    <a href="#" class="text-btn">Read More<i class="icofont-double-right"></i></a>
-                                    <a href="#" class="comments"><i class="icofont-comment"></i><span>2</span></a>
+                                    <a href="{{ $news->url }}" class="text-btn">Read More<i class="icofont-double-right"></i></a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-sm-6 col-12 wow fadeInUp" data-wow-delay="0.4s">
-                    <div class="post-item">
-                        <div class="post-item-inner">
-                            <div class="post-thumb">
-                                <a href="#"><img src="/assets/images/blog/02.jpg" alt="lab-blog"></a>
-                            </div>
-                            <div class="post-content">
-                                <h5><a href="#">Financial Reporting Qouncil What Could More...</a></h5>
-                                <div class="author-date">
-                                    <a href="#" class="date"><i class="icofont-calendar"></i>July 12, 2020</a>
-                                    <a href="#" class="admin"><i class="icofont-ui-user"></i>Somrat Islam</a>
-                                </div>
-                                <p>Pluoresntly customize pranci an plcentered  customer service anding strategic amerials Interacvely cordinate performe</p>
-                                <div class="post-footer">
-                                    <a href="#" class="text-btn">Read More<i class="icofont-double-right"></i></a>
-                                    <a href="#" class="comments"><i class="icofont-comment"></i><span>2</span></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6 col-12 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="post-item">
-                        <div class="post-item-inner">
-                            <div class="post-thumb">
-                                <a href="#"><img src="/assets/images/blog/03.jpg" alt="lab-blog"></a>
-                            </div>
-                            <div class="post-content">
-                                <h5><a href="#">Consulting Reporting Qounc Arei Could More...</a></h5>
-                                <div class="author-date">
-                                    <a href="#" class="date"><i class="icofont-calendar"></i>July 12, 2020</a>
-                                    <a href="#" class="admin"><i class="icofont-ui-user"></i>Somrat Islam</a>
-                                </div>
-                                <p>Pluoresntly customize pranci an plcentered  customer service anding strategic amerials Interacvely cordinate performe</p>
-                                <div class="post-footer">
-                                    <a href="#" class="text-btn">Read More<i class="icofont-double-right"></i></a>
-                                    <a href="#" class="comments"><i class="icofont-comment"></i><span>2</span></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                @endforeach
             </div>
         </div>
     </div>
 </section>
 <!-- Blog Section Ending Here -->
+@endif
 
 <!-- Sponsor Section Start Here -->
-<div class="sponsor-section">
+{{-- <div class="sponsor-section">
     <div class="container">
         <div class="section-wrapper wow fadeInUp" data-wow-delay="0.3s">
             <div class="sponsor-slider">
@@ -727,7 +574,7 @@
             </div>
         </div>
     </div>
-</div>
+</div> --}}
 <!-- Sponsor Section Ending Here -->
 
 @endsection

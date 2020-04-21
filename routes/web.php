@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Http;
+use App\News;
 
 
 /*
@@ -18,8 +19,9 @@ use Illuminate\Support\Facades\Http;
 Route::get('/', function () {
     $hpa = Http::get('http://covid19.health.gov.mv/api/fetch_stats');
     $hpa = json_decode($hpa);
+    $news3 = News::latest()->take(3)->get();
 
-    return view('welcome', compact('hpa'));
+    return view('welcome', compact('hpa', 'news3'));
 });
 
 Route::get('/api/hpa', function () {

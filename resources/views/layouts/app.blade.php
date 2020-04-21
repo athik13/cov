@@ -26,7 +26,7 @@
 
 		<!-- Footer Section Start Here -->
 		<footer style="background-image: url(assets/css/bg-image/footer-bg.jpg);">
-			<div class="footer-top padding-tb">
+			{{-- <div class="footer-top padding-tb">
 				<div class="container">
 					<div class="row">
 						<div class="col-lg-3 col-md-6 col-12">
@@ -115,11 +115,11 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			</div> --}}
 			<div class="footer-bottom">
 				<div class="container">
 					<div class="section-wrapper">
-						<p>&copy; 2020 All Rights Reserved.</p>
+						<p>&copy; 2020 All Rights Reserved - Covid.MV -</p>
 					</div>
 				</div>
 			</div>
