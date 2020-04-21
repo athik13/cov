@@ -14,7 +14,7 @@
                             <h3>{{ $hpa->local->surveillance[0]->dhivehi_label }}</h3>
                             <h2 class="count-people">{{ $hpa->local->surveillance[0]->statistic }}</h2>
                             <div class="header-btn" style="">
-                                <a href="https://dashboard.covidmv.live" class="lab-btn"><i class="icofont-chart"></i> <span style="font-size: 20px">dashboard.covidmv</span></a>
+                                <a href="https://dashboard.covidmv.live" class="lab-btn"><i class="icofont-chart"></i> <span style="font-size: 20px">ސްޓްޓިސްޓިކްސް</span></a>
                             </div>
                         </div>
                     </div>
