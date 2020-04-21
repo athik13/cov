@@ -39,3 +39,9 @@ Route::get('/api/coronamv', function () {
 Route::get('/dashboard', function() {
     return view('dashboard');
 });
+
+Route::get('/news', function() {
+    $newsAll = News::latest()->take(10)->get();
+
+    return view('news', compact('newsAll'));
+});
