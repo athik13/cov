@@ -3,7 +3,7 @@
 	<head>
         <meta charset="UTF-8">
 
-		<meta property="og:image" content="https://covidmv.live/share_banner.jpg" />
+		<meta property="og:image" content="https://covidmv.live/share_banner_new.jpg" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 		<!-- google fonts -->
