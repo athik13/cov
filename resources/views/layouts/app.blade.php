@@ -140,5 +140,16 @@
 		<script src="/assets/js/jquery.countdown.min.js"></script>
 		<script src="/assets/js/wow.min.js"></script>
         <script src="/assets/js/functions.js"></script>
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-92445511-6"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-92445511-6');
+        </script>
+
 	</body>
 </html>
